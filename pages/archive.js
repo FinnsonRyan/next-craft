@@ -11,7 +11,7 @@ export async function getStaticProps() {
     const deleteTitleBlock = blocksJson[i].title === 'Title' ? blocksJson.splice(i, i + 1) : blocksJson
     const deleteIndexBlock = blocksJson[i].slug === 'index' ? blocksJson.splice(i, i + 1) : blocksJson
     const deleteAboutBlock = blocksJson[i].slug === 'about' ? blocksJson.splice(i, i + 1) : blocksJson
-    console.log('[INFO] Deleted length: ', deleteTitleBlock.length, deleteIndexBlock.length)
+    console.log('[INFO] Deleted length: ', deleteTitleBlock.length, deleteIndexBlock.length, deleteAboutBlock.length)
   }
 
   return {
